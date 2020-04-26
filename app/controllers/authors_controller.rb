@@ -16,11 +16,11 @@ class AuthorsController < ApplicationController
     end
   end
 
-  def edit 
+  def edit
     @author = Author.find(params[:id])
   end
 
-  def update 
+  def update
     @author = Author.find(params[:id])
 
     if @author.update(author_params)
